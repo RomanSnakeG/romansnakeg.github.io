@@ -1,23 +1,22 @@
-body {
-    padding: 0;
+body, ul, li, a, h2 {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Anton', sans-serif;
-    p {
-        margin: 0;
-    }
-    h1, h2, h3, h4,h5, h6 {
-        margin: 0;
-    }
-    ul, li {
-        margin: 0;
-    }
+    max-width: 1980px;
+    font-family: "Lato", sans-serif;
 }
 
-$primary-color: #da8e1e;
+@font-face {
+    font-family: "Lato";
+    src: url(fonts/Lato-Black.ttf);
+    src: url(fonts/Lato-Bold.ttf);
+    src: url(fonts/Lato-Heavy.ttf);
+    src: url(fonts/Lato-Light.ttf);
+    src: url(fonts/Lato-Medium.ttf);
+    src: url(fonts/Lato-Regular.ttf);
+}
 
-@import 'scss/header';
-@import 'scss/slider';
-@import 'scss/properties';
-@import 'scss/forms';
-
+ @import "scss/header.scss";
+ @import "scss/sliders.scss";
+ @import "scss/slidersMini.scss";
+ @import "scss/login.scss";

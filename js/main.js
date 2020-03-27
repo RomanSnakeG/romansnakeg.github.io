@@ -1,12 +1,11 @@
 $(document).ready(function(){
-
-    let sliderTop = $(".owl-carousel");
-    const formInputName = $('.form-input__name'),
-          formInputTel = $('.form-input__tel');
+    const sliderTop = $("#sliders");
+    const sliderMini1 = $("#sliders-mini__carousel--1");
+    const sliderMini2 = $("#sliders-mini__carousel--2");
 
     sliderTop.owlCarousel({
         items: 1,
-        dots: false,
+        dots: true,
         smartSpeed: 2000,
         autoplay:true,
         autoplayTimeout:5000,
@@ -14,68 +13,111 @@ $(document).ready(function(){
         loop:true
     });
 
-    // $('.slider__controls--left').click(function () {
-    //     sliderTop.trigger('prev.owl.carousel')
-    // });
-    // $('.slider__controls--right').click(function () {
-    //     sliderTop.trigger('next.owl.carousel')
-    // });
-    
-    formInputName.tooltip();
-    formInputTel.tooltip();
-
-  });
-
-  $(document).ready(function() {
-      $("a[href^='#']").click(function () {
-        elementClick = $(this).attr("href");
-        destination = $(elementClick).offset().top;
-        $('html').animate({scrollTop: destination}, 1000);
-        return false;
-      });
-  });
-
-  function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      'total': t,
-      'days': days,
-      'hours': hours,
-      'minutes': minutes,
-      'seconds': seconds
-    };
-  }
-
-   
- 
+    sliderTop.owlCarousel();
   
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector('.days');
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
-   
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
-   
-      daysSpan.innerHTML = t.days;
-      hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-      minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-      secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-   
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-      }
+    
+
+    sliderMini1.owlCarousel({
+        items:4,
+        loop:true,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        responsiveClass: true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            650: {
+                items:2,
+            },
+            1000: {
+                items:3,
+            },
+            1256: {
+                items:4,
+            }
+        }
+    });
+
+    sliderMini2.owlCarousel({
+        items:4,
+        loop:true,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        responsiveClass: true,
+        responsive:{
+            0:{
+            items:1,
+            },
+            650:{
+                items:2,
+            },
+            1000:{
+                items:3,
+            },
+            1256: {
+                items:4,
+            }
+        }
+    });
+
+    sliderMini1.owlCarousel();
+    sliderMini2.owlCarousel();
+
+    $('#sliders_back1').click(function () {
+
+        sliderMini1.trigger('prev.owl.carousel')
+    });
+    $('#sliders_next1').click(function () {
+        sliderMini1.trigger('next.owl.carousel')
+    });
+
+    $('#sliders_back2').click(function () {
+
+        sliderMini2.trigger('prev.owl.carousel')
+    });
+    $('#sliders_next2').click(function () {
+        sliderMini2.trigger('next.owl.carousel')
+    });
+
+});
+
+let displayNone = document.querySelector('.none');
+let headerTopDrop = document.querySelector('.header-top__drop');
+let headerTopNavMain = document.querySelector('.header-top__nav--main');
+const icon1 = document.querySelector('.icon-1');
+
+
+$('.header-top__drop').hide();
+$('.header-top__drop--right').hide();
+
+headerTopNavMain.addEventListener('mouseup', function() {
+    if ($('.header-top__drop').css('display') === 'none') {
+        icon1.classList.toggle("open");
+        $('.header-top__drop').fadeIn("slow");
+    } else if ($('.header-top__drop').css('display') !== 'none') {
+        icon1.classList.toggle("open");
+        $('.header-top__drop').hide();
     }
-   
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-  }
-   
-  var deadline = new Date(Date.parse(new Date()) + 01 * 24 * 60 * 60 * 1000); // for endless timer
-  initializeClock('countdown', deadline);
+    
+});
+
+const icons = document.querySelectorAll('.icon');
+let headerTopDropRight = document.querySelector('.header-top__drop--right');
+
+icons.forEach (icon => {  
+    icon.addEventListener('click', (event) => {
+        icon.classList.toggle("open");
+
+        if ($('.header-top__drop--right').css('display') === 'none') {
+            $('.header-top__drop--right').slideDown("slow");
+        } else if ($('.header-top__drop--right').css('display') !== 'none') {
+            $('.header-top__drop--right').slideUp("slow");
+        }
+    });
+});
+

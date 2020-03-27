@@ -1,103 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Potencial</title>
+    <title>Цифровые волонтеры</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="libs/owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owlcarousel/owl.theme.default.min.css">
-    
 </head>
 <body>
-    <section class="main-block">
-        <div class="main-block__content">
-            <h1 class="main-block__title">Alicaps</h1>
-            <p class="main-block__text">Men's health began to fail?<br> No problem <span>'Alikaps'</span> will help you!</p>
-            <a class="main-block__btn scrollto" href="#form">Order</a> 
+    <section class="header-top">
+        <div class="header-top__logo">
+           <a href="#"><img src="img/logo.png" alt="logo"></a> 
         </div>
-        <div class="main-block__media">
-            <video class="main-block__video" src="video/video.mp4" width="100%" height="100%" preload autoplay loop muted></video>
+        <div class="header-top__search">
+            <input type="text" placeholder="Поиск по сайту">
+            <a href="#"><img class="header-top__search--img" src="img/search.png" alt="search"></a>
         </div>
-    </section>
-    <section class="slider">
-        <div class="slider__wrapper">
-            <div class="slider__list--lists owl-carousel">
-                <div class="slider__list slider__list--img item">
-                    <h3 class="slider__list--title">Recommended for</h3>
-                    <ul>
-                        <li>Weakening erection</li>
-                        <li>Premature ejaculation</li>
-                        <li>Decreased intensity of orgasm</li>
-                    </ul>
-                </div>
-                <div class="slider__list slider__list--img2 item">
-                    <h3 class="slider__list--title">Men don't give up!</h3>
-                    <p>Spare clip of sexual activity</p>
-                </div>
-                <div class="slider__list slider__list--right slider__list--img3 item">
-                    <h3 class="slider__list--title">Alicaps</h3>
-                    <p>New generation potency stimulator</p>
-                </div>
-            </div> 
-        </div>
-    </section>
-    <section class="properties">
-        <div class="properties-wrapper">
-            <img class="properties-img" src="img/Фон.png" alt="foreplay">
-            <p>Enjoy the foreplay</p>
-        </div>
-        <div class="properties-wrapper">
-            <img class="properties-img" src="img/Фон2.png" alt="timer">
-            <p>After 5-7 minutes, start sex</p>
-        </div>
-        <div class="properties-wrapper">
-            <img class="properties-img" src="img/Фон4.png" alt="Enjoy">
-            <p>Enjoy a long act</p>
-        </div>
-    </section>
-    <section id="form" class="forms">
-        <div class="forms-img">
-            <h2>Have time to buy at a discount</h2>
-            <div class="form-price">
-                <span class="form-price__original">90$</span>
-                <span class="form-price__sale">30$</span>
+        <div class="header-top__nav--main">
+            <div class="conteiner">
+                <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden">
+                <label for="checkbox1">
+                    <div class="icon-1 nav-icon-5">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
             </div>
-            
-            <img src="img/alikaps-otzyvy-vrachey.png" alt="alicaps">
+            <span>Разделы</span>
+            <div class="header-top__drop">
+                <a class="header-top__drop1" href="#">Гранты</a>
+                <a class="header-top__drop2" href="#">Курсы</a>
+                <a class="header-top__drop3" href="#">Стажировки</a>
+                <a class="header-top__drop4" href="#">Конкурсы</a>
+                <a class="header-top__drop5" href="#">Помощь</a>
+            </div>
         </div>
-        <form class="forms-input" action="#">
-            <h2>Leave a request</h2>
-            <label for="">
-                <input class="form-input__name" type="text" value="" placeholder="Name" title="Enter your name">
-            </label>
-            <label for="">
-                <input class="form-input__tel" type="tel" value="" placeholder="+7(___)___-__-__" title="Enter your phone number">
-            </label>
-            <button type="submit">Order</button>
-            <h2 class="countdown-title">Discount valid</h2>
-            <div id="countdown" class="countdown">
-                <div class="countdown-number">
-                    <span class="days countdown-time"></span>
-                    <span class="countdown-text">Days</span>
-                </div>
-                <div class="countdown-number">
-                    <span class="hours countdown-time"></span>
-                    <span class="countdown-text">Hours</span>
-                </div>
-                <div class="countdown-number">
-                    <span class="minutes countdown-time"></span>
-                    <span class="countdown-text">Minutes</span>
-                </div>
-                <div class="countdown-number">
-                    <span class="seconds countdown-time"></span>
-                    <span class="countdown-text">Seconds</span>
+        <div class="header-top__nav">
+            <ul class="header-top__nav--list">
+                <li>
+                    <a class="header-top__nav--link" href="#">О проекте
+                        <img src="/img/down.png" alt="down">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-top__private">
+            <a href="#"><img src="/img/login.png" alt="login">Войти</a> 
+        </div>
+        <div class="header-top__lang">
+            <a href="#">
+                <img src="/img/russia.png" alt="russia">
+                <img src="/img/down.png" alt="down">
+            </a>
+        </div>
+        <nav class="header-top__drop--right nav">
+            <a class="nav-item" href="#">Гранты</a>
+            <a class="nav-item" href="#">Курсы</a>
+            <a class="nav-item" href="#">Стажировки</a>
+            <a class="nav-item" href="#">Конкурсы</a>
+            <a class="nav-item" href="#">Помощь</a>
+            <a class="nav-item" href="#">О проекте</a>
+            <a class="nav-item" href="#">Новости</a>
+            <a class="nav-item" href="#">Войти</a>
+            <a class="nav-item" href="#">
+                <img src="/img/russia.png" alt="russia">
+                <img src="/img/down.png" alt="down">
+            </a>
+        </nav>
+        <div class="icon nav-icon-4">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <section id="sliders" class="sliders owl-carousel">
+        <div class="sliders-content">
+            <div class="sliders-content__title">Объеденяем усилия, <br>чтобы сделать образование<br>доступным для всех</div>
+            <div class="sliders-content__text">Узнать больше о стратегии развития проекта</div>
+            <a class="sliders-content__btn" href="#">УЗНАТЬ ПОДРОБНЕЕ</a>
+        </div>
+        <div class="sliders-content">
+            <div class="sliders-content__title">Объеденяем усилия, <br>чтобы сделать образование<br>доступным для всех</div>
+            <div class="sliders-content__text">Узнать больше о стратегии развития проекта</div>
+            <a class="sliders-content__btn" href="#">УЗНАТЬ ПОДРОБНЕЕ</a>
+        </div>
+        <div class="sliders-content">
+            <div class="sliders-content__title">Объеденяем усилия, <br>чтобы сделать образование<br>доступным для всех</div>
+            <div class="sliders-content__text">Узнать больше о стратегии развития проекта</div>
+            <a class="sliders-content__btn" href="#">УЗНАТЬ ПОДРОБНЕЕ</a>
+        </div>
+        <div class="sliders-content">
+            <div class="sliders-content__title">Объеденяем усилия, <br>чтобы сделать образование<br>доступным для всех</div>
+            <div class="sliders-content__text">Узнать больше о стратегии развития проекта</div>
+            <a class="sliders-content__btn" href="#">УЗНАТЬ ПОДРОБНЕЕ</a>
+        </div>
+        <div class="sliders-content">
+            <div class="sliders-content__title">Объеденяем усилия, <br>чтобы сделать образование<br>доступным для всех</div>
+            <div class="sliders-content__text">Узнать больше о стратегии развития проекта</div>
+            <a class="sliders-content__btn" href="#">УЗНАТЬ ПОДРОБНЕЕ</a>
+        </div>
+    </section>
+    <section class="sliders-mini">
+        <h2 class="sliders-mini__title">Актуальные грантовые программы</h2>
+        <div id="sliders-mini__carousel--1" class="sliders-mini__wrapper owl-carousel owl-reponsive">
+            <div class="sliders-mini__block">
+                <img src="img/Слой 1.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Nulla viverra sem sit amet varius</p>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>
                 </div>
             </div>
-        </form>
+            <div class="sliders-mini__block">
+                <img src="img/Слой 2.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Nulla viverra sem sit amet varius</p>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>
+                </div>
+            </div>
+            <div class="sliders-mini__block">
+                <img src="img/Слой 3.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Nulla viverra sem sit amet varius</p>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>    
+                </div>
+            </div>
+            <div class="sliders-mini__block">
+                <img src="img/Слой 4.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Nulla viverra sem sit amet varius</p>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>    
+                </div>
+            </div>
+        </div>
+        <div class="sliders-mini__carousel--1">
+            <img id="sliders_back1" class="sliders-mini__carousel-1--back" src="/img/back_arrow.png" alt="back">
+            <img id="sliders_next1" class="sliders-mini__carousel-1--next" src="/img/next_arrow.png" alt="next">
+        </div>
+        
+        <h2 class="sliders-mini__title">Онлайн-курсы для тебя</h2>
+        <div id="sliders-mini__carousel--2" class="sliders-mini__wrapper owl-carousel owl-reponsive">
+            <div class="sliders-mini__block--2">
+                <img src="img/Слой 5.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Название курса по математике</p>
+                    <div class="sliders-mini__ratings">
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>
+                </div>
+            </div>
+            <div class="sliders-mini__block--2">
+                <img src="img/Слой 6.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Название курса по маркетингу</p>
+                    <div class="sliders-mini__ratings">
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>
+                </div>
+            </div>
+            <div class="sliders-mini__block--2">
+                <img src="img/Слой 7.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Название курса по иностранным языкам</p>
+                    <div class="sliders-mini__ratings">
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>    
+                </div>
+            </div>
+            <div class="sliders-mini__block--2">
+                <img src="img/Слой 8.png" alt="">
+                <div class="sliders-mini__content">
+                    <p>Название курса по бизнесу</p>
+                    <div class="sliders-mini__ratings">
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star-active"></span>
+                        <span class="star"></span>
+                        <span class="star"></span>
+                    </div>
+                    <a href="#">Бизнес</a>
+                    <a href="#">Здоровье</a>    
+                </div>
+            </div>
+        </div>
+        <div class="sliders-mini__carousel--1">
+            <img id="sliders_back2" class="sliders-mini__carousel-2--back" src="/img/back_arrow.png" alt="back">
+            <img id="sliders_next2" class="sliders-mini__carousel-2--next" src="/img/next_arrow.png" alt="next">
+        </div>
     </section>
-    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <section class="log-in">
+        <div class="log-in-wrapper">
+            <h2 class="log-in__title">So why wait?</h2>
+            <p class="log-in__text">Start one of our 1000 high quality courses<br>from the world's leading experts today!</p>
+            <a class="log-in__btn--1" href="#">Найти курсы</a>
+            <span>или</span>
+            <a class="log-in__btn--2" href="#">Войти</a>
+        </div>
+    </section>
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
     <script src="libs/owlcarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 </body>
