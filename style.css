@@ -386,6 +386,7 @@ body, ul, li, a, h2 {
   background-image: url(/img/bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 100%;
   padding-top: 100px; }
 
