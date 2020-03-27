@@ -277,7 +277,7 @@ body, ul, li, a, h2 {
   position: absolute;
   top: 0;
   left: 0; }
-  @media (min-width: 500px) and (max-width: 600px) {
+  @media (min-width: 500px) and (max-width: 650px) {
     .header-top__drop--right {
       height: 500px; } }
   .header-top__drop--right a {
@@ -385,6 +385,7 @@ body, ul, li, a, h2 {
 .sliders {
   background-image: url(/img/bg.png);
   background-repeat: no-repeat;
+  background-position: center;
   height: 100%;
   padding-top: 100px; }
 
