@@ -1,4 +1,4 @@
-body, ul, li, a, h2 {
+body, ul, li, a, h2, h3, h4, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,3 +20,9 @@ body, ul, li, a, h2 {
  @import "scss/sliders.scss";
  @import "scss/slidersMini.scss";
  @import "scss/login.scss";
+ @import "scss/themes.scss";
+ @import "scss/search.scss";
+ @import "scss/footer.scss";
+ @import "scss/contacts.scss";
+ @import "scss/grants.scss";
+ @import "scss/courses.scss";

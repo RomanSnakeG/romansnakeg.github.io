@@ -121,3 +121,12 @@ icons.forEach (icon => {
     });
 });
 
+const accordeon = document.querySelectorAll("[data-name='accordeon-title']");
+
+accordeon.forEach(function(item) {
+    item.addEventListener("click", headerClick);
+});
+
+function headerClick() {
+    this.nextElementSibling.classList.toggle("accordeon-body");
+}

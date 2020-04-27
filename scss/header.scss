@@ -4,7 +4,7 @@
     align-items: center;
     height: 81px;
     background-color: #fff;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
 
     @media (max-width: 678px) {
@@ -334,7 +334,7 @@
     top: 0;
     left: 0;
     
-    @media (min-width:500px) and (max-width:677px) {
+    @media (min-width:500px) and (max-width:650px) {
         height: 500px;
     }
     a {

@@ -1,0 +1,38 @@
+.themes {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+.themes-title {
+    font-size: 45px;
+    margin-bottom: 30px;
+
+    @media (max-width: 800px) {
+        font-size: 31px;
+    }
+}
+.themes-items__wrapper {
+    max-width: 1200px;
+    margin: 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.themes-items {
+    width: 260px;
+    display: flex;
+    border: 1px solid #dedede;
+    padding: 15px 0px 15px 30px;
+    margin: 15px auto;
+    text-decoration: none;
+    
+    &:hover {
+        border: 1px solid #595d61;
+    }
+
+    h3 {
+        margin-left: 20px;
+        color: #595d61;
+    }
+}

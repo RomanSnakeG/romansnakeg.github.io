@@ -1,0 +1,115 @@
+.footer {
+    background-color: #1c273b;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+.footer-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-block__social {
+    padding: 10px;
+
+    img {
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2em;
+        color: #fff;
+    }
+}
+.footer-block__social--icons {
+
+    a{
+        margin-right: 20px;
+    }
+}
+
+.footer-block__title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 20px 0;
+}
+
+.footer-block__nav {
+    padding: 10px;
+
+}
+.footer-block__nav--list {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 380px) {
+        flex-direction: column;
+        width: 290px;
+    }
+
+    li {
+        list-style-type: none;
+        height: 30px;
+        width: 170px;
+        border-bottom: 1px solid #fff;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.footer-block__contacts {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+    span {
+        position: relative;
+        margin-left: 25px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2em;
+    }
+}
+
+.footer-block__contacts--icon-sity::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: -25px;
+    background-image: url('/img/pin white.png');
+    width: 13px;
+    height: 18px;
+}
+
+.footer-block__contacts--icon-phone::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -25px;
+    background-image: url('/img/phone white.png');
+    width: 15px;
+    height: 15px;
+}
+
+.footer-block__contacts--icon-email::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: -25px;
+    background-image: url('/img/mail white.png');
+    width: 16px;
+    height: 12px;
+}
